@@ -1,0 +1,15 @@
+{
+  "name": "Questioner",
+  "version": "1.0.0",
+  "description": "A simple extension for useful questions",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vitezslav Benes",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-ruby-sass": "~2.0.5",
+    "browser-sync": "~2.9.11"
+  }
+}

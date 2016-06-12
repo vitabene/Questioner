@@ -1,0 +1,13 @@
+{
+  "name": "Questioner",
+  "description": "A simple extension for useful questions",
+  "version": "2.0",
+  "permissions": [
+    "storage",
+    "notifications"
+  ],
+  "browser_action": {
+    "default_popup": "./popup.html"
+  },
+  "manifest_version": 2
+}
