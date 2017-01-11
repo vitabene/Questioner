@@ -52,6 +52,14 @@ var QS = [
       "What is the MED?",
       "What is the minimum information that will enable me to play?"
     ],
+    "smarter goal": [
+      "Is this goals specific?",
+      "Is this goals measurable?",
+      "Is this goals actionable?",
+      "Is this goals time-anchored?",
+      "Is this goals exciting?",
+      "Is this goals relevant?"
+    ],
     "indecisiveness": [
       "Is this right?",
       "What is it for?",

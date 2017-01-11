@@ -2,6 +2,7 @@ class Questioner {
   constructor(qs){
     this.data = qs[0];
     this.actions = [];
+    this.sequence = 0;
     this.loadUI();
     this.addListeners();
   }
@@ -29,15 +30,22 @@ class Questioner {
     });
   }
   loadUIQuestions(cat){
-    let Qs = document.getElementById('Qs');
-    while (Qs.children.length > 0) Qs.removeChild(Qs.children[0])
-    let qs = this.data[cat];
-    // loads one
-    let qNum = Math.floor(Math.random() * (qs.length - 0)) + 0;
-    let n = document.createElement('li');
-    n.className = "q";
-    n.innerHTML = qs[qNum];
-    Qs.appendChild(n);
+    var Qs = document.getElementById('Qs'),
+        qNum = this.sequence;
+    function showQ(data){
+      while (Qs.children.length > 0) Qs.removeChild(Qs.children[0])
+      let qs = data[cat];
+      if (qs.length == qNum) qNum = 0;
+      // loads one at random
+      // let qNum = Math.floor(Math.random() * (qs.length - 0)) + 0;
+      // loads in sequence
+      let n = document.createElement('li');
+      n.className = "q";
+      n.innerHTML = qs[qNum];
+      Qs.appendChild(n);
+      return ++qNum;
+    }
+    this.sequence = showQ(this.data);
   }
   loadBackButton(){
     this.actions['backButton'] = function(){
