@@ -1,23 +1,47 @@
 body {
+  width: 280px;
   margin: 0;
   padding: 0;
-  width: 280px;
   text-align: center;
 }
 h1 {
   font-size: large;
 }
 ul {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 li {
-  height: 30px;
+  min-height: 40px;
+  padding: 10px;
   cursor: pointer;
+  line-height: 40px;
 }
 .hidden {
   display: none;
 }
 .q-cat:not(.hidden) {
-  user-select: none;  
+  user-select: none;
+}
+.q-cat-ul li {
+  background-color: #f8f8f8;
+}
+.q-cat-ul li:active {
+  background-color: #888;
+}
+.controls {
+  overflow: auto;
+  padding: 10px 0;
+  background-color: #555;
+}
+.btn.back {
+  float: left;
+  width: 40px;
+  cursor: pointer;
+  text-transform: lowercase;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  font-family: "Inconsolata";
 }

@@ -1,6 +1,6 @@
 {
-  "name": "Questioner",
-  "description": "A simple extension for useful questions",
+  "name": "Qanr",
+  "description": "A simple extension for useful questions and reminders",
   "version": "2.0",
   "permissions": [
     "storage",
