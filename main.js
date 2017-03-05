@@ -1,4 +1,4 @@
-class Questioner {
+class Remindrr {
   constructor(qs){
     this.data = qs[0];
     this.actions = [];
@@ -69,5 +69,5 @@ class Questioner {
 }
 
 window.onload = function() {
-  var q = new Questioner(QS);
+  var q = new Remindrr(QS);
 };

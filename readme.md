@@ -1,4 +1,4 @@
-###Questioner - A simple extension for useful introspective questions
+###Remindrr - A simple extension for useful questions and reminders
 
 ##Question examples
 Productivity
@@ -13,8 +13,6 @@ Outside the box
 "Where do you see room for improvement?"
 "How do I think 10x bigger from the beginning?"
 "How would most people solve this?"
-
-####Custom Questions are not supported yet
 
 ###Installation
 Enter Developer More in Chrome settings and load unpacked extension

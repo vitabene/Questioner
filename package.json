@@ -1,7 +1,7 @@
 {
-  "name": "Questioner",
+  "name": "Remindrr",
   "version": "1.0.0",
-  "description": "A simple extension for useful questions",
+  "description": "A simple extension for useful questions and reminders",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
